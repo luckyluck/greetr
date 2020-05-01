@@ -1,4 +1,4 @@
-(function (global, $) {
+;(function (global, $) {
   // hidden within the scope of the IIFE and never directly accessible
   const supportedLanguages = ['en', 'es'];
   // informal greetings
