@@ -63,6 +63,20 @@
       this.validate();
 
       return this;
+    },
+
+    HTMLGreeting: function (selector, formal) {
+      if (!$) {
+        throw 'jQuery not loaded';
+      }
+      if (!selector) {
+        throw 'Missing jQuery selector';
+      }
+
+      const message = formal ? this.formalGreeting() : this.greeting();
+      $(selector).html(message);
+
+      return this;
     }
   };
 
